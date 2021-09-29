@@ -55,4 +55,4 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 80
 
-# CMD atd && cron && apachectl -D FOREGROUND
+CMD tail -f /dev/null
