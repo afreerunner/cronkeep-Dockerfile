@@ -1,4 +1,3 @@
-# cronkeep-dockerfile
 dockerfile for [cronkeep/cronkeep](https://github.com/cronkeep/cronkeep)
 
 ## Pull
