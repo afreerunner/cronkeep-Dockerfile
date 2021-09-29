@@ -48,6 +48,11 @@ RUN apt-get clean autoclean && \
     apt-get autoremove --yes && \
     rm -rf /var/lib/{apt,dpkg,cache,log}/
 
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
 EXPOSE 80
 
-CMD atd && cron && apachectl -D FOREGROUND
+# CMD atd && cron && apachectl -D FOREGROUND
