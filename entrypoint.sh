@@ -1,4 +1,4 @@
 #!/bin/bash
-atd && cron && apachectl -D BACKGROUND
+atd && cron && apachectl start
 
 $@
