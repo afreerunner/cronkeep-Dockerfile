@@ -18,7 +18,6 @@ RUN apt update \
         at \
     && curl -sS https://getcomposer.org/installer | php \
     && php composer.phar create-project cronkeep/cronkeep --keep-vcs -s dev /var/www/cronkeep \
-    && rm -rf /var/lib/apt/lists/* \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}/ \
